@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Cloning dependencies"
-git clone --depth=1 -b stablereb https://github.com/prorooter007/Nethunter_Kernel_Xiaomi_msm8953 kernel
+git clone --depth=1 -b nethrebased https://github.com/prorooter007/Nethunter_Kernel_Xiaomi_msm8953 kernel
 cd kernel
 git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang clang
 git clone https://github.com/prorooter007/AnyKernel3 -b tissot --depth=1 AnyKernel
