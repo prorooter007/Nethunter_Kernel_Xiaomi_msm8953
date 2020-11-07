@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Cloning dependencies"
-git clone --depth=1 -b rperf https://github.com/prorooter007/Android_Kernel_Xiaomi_msm8953 kernel
+git clone --depth=1 -b team420 https://github.com/prorooter007/Nethunter_Kernel_Xiaomi_msm8953 kernel
 cd kernel
 git clone --depth=1 -b master https://github.com/kdrag0n/proton-clang clang
 git clone https://github.com/prorooter007/AnyKernel3 -b tissot --depth=1 AnyKernel
@@ -17,7 +17,7 @@ export KBUILD_BUILD_USER=prorooter007
 export KBUILD_BUILD_HOST=circleci
 # Compile plox
 function compile() {
-    make -j$(nproc) O=out ARCH=arm64 tissot_defconfig
+    make -j$(nproc) O=out ARCH=arm64 nethunter-tissot_defconfig
     make -j$(nproc) O=out \
                     ARCH=arm64 \
                       CC=clang \
